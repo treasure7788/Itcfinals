@@ -50,7 +50,6 @@ body {
     align-items: center;
     color: rgb(0, 0, 0);
     padding: 0 1rem;    
-    background-image: url('assets/67.png'); 
     background-size: cover;
     background-position: center 20%;
     transition: 0.3s;
@@ -59,4 +58,39 @@ body {
 
 .main-section:hover{
     box-shadow: 5px 1px 25px 9px rgba(0,0,0,0.6);       
+}
+
+.login-container    {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login  {
+    background-color: rgb(148, 152, 173);
+    max-width: 100%;
+    width: 50vh;
+    border-radius: 10px;
+    height: 60vh;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.login-form {
+    
+    color: gray;
+    border-color: gray;
+    border-style: solid;
+    padding: 10px;
+    width: 40vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.forgot-pass {
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 40px;
 }
