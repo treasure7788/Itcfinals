@@ -68,7 +68,7 @@ body {
 }
 
 .login  {
-    background-color: rgb(148, 152, 173);
+    background-color: rgb(184, 209, 221);
     max-width: 100%;
     width: 50vh;
     border-radius: 10px;
@@ -80,8 +80,8 @@ body {
 .login-form {
     
     color: gray;
-    border-color: gray;
-    border-style: solid;
+    border-style: none;
+    box-shadow: 8px 8px 12px rgba(149, 157, 165, 0.7) ;
     padding: 10px;
     width: 40vh;
     border-radius: 10px;
@@ -94,3 +94,42 @@ body {
     cursor: pointer;
     padding-right: 40px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-button   {
+    color: rgb(255, 255, 255);
+    border-style: none;
+    box-shadow: 0px 8px 28px rgba(149, 157, 165, 0.2) ;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 50vh;
+    cursor: pointer;
+}
+
+.gstarted   {
+    width: 42vh;
+    background-color: black;
+    height: 4vh;
+}
+
+.imagebutton-container    {
+   display:flex;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.imagebutton    {
+    width: 100%;
+    color: red;
+}
+.imagebutton-gmail {
+    margin-right: 10px;
+}
+.imagebutton-facebook {
+    margin-right: 10px;
+}
+
+
