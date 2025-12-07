@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-header {
@@ -54,25 +58,27 @@ body {
     background-position: center 20%;
     transition: 0.3s;
     font-size: 100px;
+    flex: 1;
 }
 
 .main-section:hover{
     box-shadow: 5px 1px 25px 9px rgba(0,0,0,0.6);       
 }
-
+/* LOGIN CSS STARTS HERE*/
 .login-container    {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .login  {
     background-color: rgb(184, 209, 221);
-    max-width: 100%;
-    width: 50vh;
+    max-width: 470px;
+    width: 100%;
     border-radius: 10px;
-    height: 60vh;
+    height: auto;
     padding-top: 20px;
     text-align: center;
 }
@@ -83,7 +89,7 @@ body {
     border-style: none;
     box-shadow: 8px 8px 12px rgba(149, 157, 165, 0.7) ;
     padding: 10px;
-    width: 40vh;
+    width: 80%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -110,9 +116,9 @@ a {
 }
 
 .gstarted   {
-    width: 42vh;
+    width: 85%;
     background-color: black;
-    height: 4vh;
+    height: 10%;
 }
 
 .imagebutton-container    {
@@ -124,6 +130,7 @@ a {
 .imagebutton    {
     width: 100%;
     color: red;
+    margin-bottom: 30px;
 }
 .imagebutton-gmail {
     margin-right: 10px;
@@ -131,5 +138,36 @@ a {
 .imagebutton-facebook {
     margin-right: 10px;
 }
+/* LOGIN CSS ENDS HERE*/
 
+/* FOOTER */
 
+footer {
+    width: 100%;
+    background-color: #1d2a44;
+    color: gray;
+    height: 50px; 
+    display: flex;
+    overflow:hidden;
+}
+
+.container {
+    width: 100%; 
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 0 30px;
+    margin: 0;
+    font-size: 11px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
