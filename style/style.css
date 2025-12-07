@@ -47,9 +47,7 @@ body {
 }
 
 .main-section {
-    position: relative;
     height: 600px;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
@@ -61,9 +59,7 @@ body {
     flex: 1;
 }
 
-.main-section:hover{
-    box-shadow: 5px 1px 25px 9px rgba(0,0,0,0.6);       
-}
+
 /* LOGIN CSS STARTS HERE*/
 .login-container    {
     margin-top: 50px;
