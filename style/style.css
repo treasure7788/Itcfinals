@@ -1,25 +1,45 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: montserrat, sans-serif;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+.slide1 {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; /*--This is used to remove the border of the background--*/
+  padding: 8rem 4rem;
+  background-image: url('assets/hero.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .slide {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box; /*--This is used to remove the border of the background--*/
+  box-sizing: border-box; 
 }
 
 .tagline {
-    font-size: 48px;
+    font-size: 58px;
     color: #333;
     text-align: center;
-    margin-top: 200px;
+    padding-top: 75px;
 }
+
+.p1 {
+    font-size: 26.25px;
+    width: 625px; 
+    color: #333;
+    text-align: justify;
+    padding: 10px;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
