@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    
 }
 
 .logo a {
@@ -69,6 +70,11 @@ body {
     text-decoration: none;
     color: #222;
     font-size: 15px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #dddddd;
+ 
 }
 
 .join-btn {
