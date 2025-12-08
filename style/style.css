@@ -106,7 +106,7 @@ a {
 .login-button   {
     color: rgb(255, 255, 255);
     border-style: none;
-    box-shadow: 0px 8px 28px rgba(149, 157, 165, 0.2) ;
+    box-shadow: 0px 8px 28px rgba(149, 157, 165, 0.2);
     padding: 10px;
     border-radius: 10px;
     max-width: 50vh;
@@ -115,7 +115,7 @@ a {
 
 .gstarted   {
     width: 85%;
-    background-color: black;
+    background-color: rgb(107, 119, 175);
     height: 10%;
 }
 
@@ -127,19 +127,31 @@ a {
 
 .imagebutton    {
     width: 100%;
-    color: red;
+
     margin-bottom: 30px;
 }
 .imagebutton-gmail {
     margin-right: 10px;
+    color: rgb(255, 0, 0);
 }
 .imagebutton-facebook {
     margin-right: 10px;
+    color: blue
+}
+.imagebutton-apple  {
+    color: gray;
 }
 .login-page {
     background-image: url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-
 }
+#log-details    {
+    color: white;
+    text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.9);
+}
+#separator  {
+    color:rgb(185, 185, 185);
+}
+
 /* LOGIN CSS ENDS HERE*/
 
 /* FOOTER */
@@ -148,7 +160,7 @@ footer {
     width: 100%;
     background-color: #1d2a44;
     color: gray;
-    height: 50px; 
+    height: 50px;
     display: flex;
     overflow:hidden;
 }

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title> </title>
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!--Icons are imported from here-->   
     </head>
     <body class="login-page">
         <header class="main-header">
@@ -23,9 +24,11 @@
         </header>
         <div class="login-container">
             <div class="login">
-                <img src="">image here, look at the code <br><br><br><br>
-                <h1>Sign in with email</h1>
-                <p>Sign in to access our services for free.</p>
+                <div id="log-details">
+                    <img src="">image here, look at the code <br><br><br><br>
+                    <h1>Sign in with email</h1>
+                    <p>Sign in to access our services for free.</p>
+                </div>
                 <form class="form-container">
                     <input type="text"placeholder="Email" class="login-form"><br>
                     <input type="text"placeholder="Password" class="login-form"><br>
@@ -34,11 +37,11 @@
                 </div><br>
                 <br>
                 <button class="login-button gstarted">Get Started</button><br><br>
-                <p>· · · · · · · · · Or sign in with · · · · · · · · ·</p><br>
+                <p id="separator">· · · · · · · · · Or sign in with · · · · · · · · ·</p><br>
                 <div class="imagebutton-container">
-                    <button class="login-button imagebutton imagebutton-gmail">Gmail image</button>
-                    <button class="login-button imagebutton imagebutton-facebook">facebook image</button>
-                    <button class="login-button imagebutton"> some other site image put them with src or something</button>
+                    <button class="login-button imagebutton imagebutton-gmail"><i class="fab fa-google"></i></button>
+                    <button class="login-button imagebutton imagebutton-facebook"><i class="fab fa-facebook-f"></i></button>
+                    <button class="login-button imagebutton imagebutton-apple"><i class="fab fa-apple"></i></button>
                 </div>
                 </form>
 
