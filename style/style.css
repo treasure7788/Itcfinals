@@ -12,10 +12,10 @@ body {
   border: 0;
   box-sizing: border-box; /*--This is used to remove the border of the background--*/
   padding: 8rem 4rem;
-  background-image: url('assets/hero.gif');
+  background-image: url('assets/hero.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .slide {
