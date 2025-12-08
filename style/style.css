@@ -53,6 +53,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    
 }
 
 .logo a {
@@ -89,6 +90,11 @@ body {
     text-decoration: none;
     color: #222;
     font-size: 15px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #dddddd;
+ 
 }
 
 .join-btn {
@@ -98,10 +104,15 @@ body {
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
+
+    transition: box-shadow 0.6s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .join-btn:hover {
-    background-color: #f7f7f7;
+    transition: background-color 0.6s;
+    background-color: #363636;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
 }
 
 .main-section {
@@ -126,7 +137,9 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
+    
 }
+
 .login-container img{   
     width: 30%;
 }
@@ -140,7 +153,11 @@ body {
     height: auto;
     padding-top: 20px;
     text-align: center;
+    transition: box-shadow 0.8s;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.login:hover {
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
 }
 
 .login-form {
