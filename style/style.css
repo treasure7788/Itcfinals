@@ -17,8 +17,10 @@ body {
 }
 
 .logo img {
-    height: 28px;
-    text-decoration: none;
+    height: 44px; /* larger by default to better fill the header */
+    max-height: 56px; /* prevent oversized images */
+    width: auto; /* preserve aspect ratio */
+    display: block;
 }
 
 .nav-links {
@@ -62,15 +64,17 @@ body {
 
 /* LOGIN CSS STARTS HERE*/
 .login-container    {
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
 }
+.login-container img{   
+    width: 30%;
+}
 
 .login  {
-    background-color: rgba(184, 209, 221, 0.15);
+    background-color: rgba(10, 10, 10, 0.15);
     backdrop-filter: blur(15px);
     max-width: 470px;
     width: 100%;
