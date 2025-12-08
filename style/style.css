@@ -7,6 +7,19 @@ body {
     min-height: 100vh;
 }
 
+.slide {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /*--This is used to remove the border of the background--*/
+}
+
+.tagline {
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    margin-top: 200px;
+}
 .main-header {
     display: flex;
     justify-content: space-between;
