@@ -7,6 +7,17 @@ body {
     min-height: 100vh;
 }
 
+.slide1 {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; /*--This is used to remove the border of the background--*/
+  padding: 8rem 4rem;
+  background-image: url('assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .slide {
   margin: 0;
   padding: 0;
@@ -14,11 +25,20 @@ body {
 }
 
 .tagline {
-    font-size: 48px;
+    font-size: 58px;
     color: #333;
     text-align: center;
-    margin-top: 200px;
+    padding-top: 75px;
 }
+
+.p1 {
+    font-size: 26.25px;
+    width: 625px; 
+    color: #333;
+    text-align: justify;
+    padding: 10px;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -261,4 +281,44 @@ footer {
 .detail-container   {
     display: flex;
     flex: 1;
+}
+.detail-banner   {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #2c7a7b;
+    color: white;
+    padding: 40px 20px;
+}
+
+.detail-container   {
+    max-width: 100%;
+    margin-top: auto;
+    width: 100%;
+}
+.detail-content-container   {
+    max-width: 100%;
+    margin-top: - 1auto;
+    width: 100%;
+    flex-grow: 2000;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.detail-section{
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+}
+.detail-card    {
+    box-shadow: 0px 8px 28px rgba(149, 157, 165, 0.2);
+    width: 100%;
+    background-color: #1B6B93;
+    margin: 50px;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+    padding-left: 4%;
 }
