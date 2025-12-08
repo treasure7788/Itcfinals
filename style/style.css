@@ -93,7 +93,9 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
+    
 }
+
 .login-container img{   
     width: 30%;
 }
@@ -107,7 +109,11 @@ body {
     height: auto;
     padding-top: 20px;
     text-align: center;
+    transition: box-shadow 0.8s;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.login:hover {
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
 }
 
 .login-form {
