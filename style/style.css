@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 30px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: none;
     background-color: #1B6B93;
 }
 
@@ -35,9 +35,11 @@ body {
     width: auto;
     display: block;
 }
-
+.brand  {
+    text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.4);;
+}
 .logo .brand {
-    color: #ffffff;
+    color: #dddddd;
     font-size: 18px;
     font-weight: 700;
     line-height: 1;
@@ -81,6 +83,8 @@ body {
     font-size: 100px;
     flex: 1;
 }
+
+.main-section h1 { margin-top: 0; }
 
 
 /* LOGIN CSS STARTS HERE */
