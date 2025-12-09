@@ -22,13 +22,6 @@ body {
       --nav-size: 52px;
     }
 
-    * {
-      margin:0; 
-      padding:0; 
-      box-sizing: border-box;
-    }
-
-
     /* Carousel container */
     .carousel {
       position: relative;
