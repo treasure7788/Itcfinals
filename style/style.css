@@ -22,7 +22,7 @@ body {
       --nav-size: 52px;
     }
 
-    /* Carousel container */
+      /* Carousel container */
     .carousel {
       position: relative;
       width: 100%;
@@ -50,39 +50,65 @@ body {
     }
 
     /* Individual slide */
-    .carousel .slide {
-      min-width: 100%;
-      height: 520px;
+    .slides .slide-intro {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      justify-content: center; 
+      min-width: 100%;
+      height: 520px;
       background: var(--bg);
-      text-align: center;
       padding: 2.5rem 2rem;
       position: relative;
       overflow: hidden;
     }
 
-    .carousel .slide::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 50% 35%, var(--accent) 0%, transparent 55%);
-      opacity: 0.12;
-      pointer-events: none;
+       .slides .slide-pop1 {
+      display: flex;
+      flex-direction: column; 
+      min-width: 100%;
+      height: 520px;
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .carousel .slide::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.2) 100%);
-      pointer-events: none;
+    .slides .slide-pop2 {
+      display: flex;
+      flex-direction: column; 
+      min-width: 100%;
+      height: 520px;
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .slides .slide-pop3 {
+      display: flex;
+      flex-direction: column; 
+      min-width: 100%;
+      height: 520px;
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .carousel .slide h2 {
+    .slides .slide-team {
+      display: flex;
+      flex-direction: column; 
+      min-width: 100%;
+      height: 520px;
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides h2 {
       font-size: 2.5rem;
+      padding-left: 2.75rem;
       margin: 0 0 1.25rem 0;
       color: var(--text);
       letter-spacing: -0.03em;
@@ -92,10 +118,12 @@ body {
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
 
-    .carousel .slide p {
+    .slides p {
       color: var(--muted);
+      padding-left: 2.75rem;
       font-size: 1.125rem;
       max-width: 560px;
+      text-align: justify; 
       line-height: 1.7;
       position: relative;
       z-index: 1;
@@ -108,8 +136,6 @@ body {
     #slide3:checked ~ .slides { transform: translateX(-200%); }
     #slide4:checked ~ .slides { transform: translateX(-300%); }
     #slide5:checked ~ .slides { transform: translateX(-400%); }
-    #slide6:checked ~ .slides { transform: translateX(-500%); }
-    #slide7:checked ~ .slides { transform: translateX(-600%); }
 
     /* Navigation arrows */
     .nav {
@@ -119,17 +145,16 @@ body {
       width: var(--nav-size);
       height: var(--nav-size);
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
-      color: #fff;
+      border: none;
+      color: white;
       font-size: 2rem;
       display: none;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: transparent(10px);
+      -webkit-backdrop-filter: transparent(10px);
       z-index: 10;
       user-select: none;
       font-weight: 300;
@@ -149,7 +174,7 @@ body {
     .nav.next { right: 20px; }
 
     /* Display correct pair for active slide */
-    #slide1:checked ~ .prev[for="slide7"],
+    #slide1:checked ~ .prev[for="slide5"],
     #slide1:checked ~ .next[for="slide2"],
     #slide2:checked ~ .prev[for="slide1"],
     #slide2:checked ~ .next[for="slide3"],
@@ -158,11 +183,8 @@ body {
     #slide4:checked ~ .prev[for="slide3"],
     #slide4:checked ~ .next[for="slide5"],
     #slide5:checked ~ .prev[for="slide4"],
-    #slide5:checked ~ .next[for="slide6"],
-    #slide6:checked ~ .prev[for="slide5"],
-    #slide6:checked ~ .next[for="slide7"],
-    #slide7:checked ~ .prev[for="slide6"], 
-    #slide7:checked ~ .next[for="slide1"] {
+    #slide5:checked ~ .next[for="slide1"]{
+
       display: flex;
     }
 
@@ -203,9 +225,7 @@ body {
     #slide2:checked ~ .dots label[for="slide2"],
     #slide3:checked ~ .dots label[for="slide3"],
     #slide4:checked ~ .dots label[for="slide4"],
-    #slide5:checked ~ .dots label[for="slide5"],
-    #slide6:checked ~ .dots label[for="slide6"],
-    #slide7:checked ~ .dots label[for="slide7"] {
+    #slide5:checked ~ .dots label[for="slide5"] {
       background: var(--accent);
       box-shadow: 
         0 0 20px var(--accent),
@@ -223,8 +243,6 @@ body {
     .slide:nth-child(3) { --accent-rgb: 251, 146, 60; }
     .slide:nth-child(4) { --accent-rgb: 52, 211, 153; }
     .slide:nth-child(5) { --accent-rgb: 167, 139, 250; }
-    .slide:nth-child(6) { --accent-rgb: 250, 204, 139; }
-    .slide:nth-child(7) { --accent-rgb: 250, 150, 139; }
 
     /* Responsive */
     @media (max-width: 768px) {
@@ -267,12 +285,6 @@ body {
     color: #333;
     text-align: center;
     padding: 20px 0;
-}
-
-.p1 {
-    font-size: 26.25px;
-    width: 625px; 
-    text-align: justify;
 }
 
 .main-header {
@@ -355,7 +367,10 @@ body {
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    padding: 0 1rem;    
+    padding: 0;    
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
     background-size: cover;
     background-position: center 20%;
     transition: 0.3s;
@@ -593,6 +608,11 @@ footer {
     justify-content: center;
 }
 
+.detail-section{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+}
 .detail-card    {
     box-shadow: 0px 8px 28px rgba(149, 157, 165, 0.2);
     width: 100%;
@@ -619,7 +639,8 @@ footer {
 }
 .more-info-grid {
     display: grid;
-    gap: 10px;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 .info-card {
     background: rgba(255,255,255,0.06);
