@@ -50,7 +50,7 @@ body {
     }
 
     /* Individual slide */
-    .slides .slide-intro {
+    .slide-intro {
       display: flex;
       flex-direction: column;
       justify-content: center; 
@@ -62,7 +62,7 @@ body {
       overflow: hidden;
     }
 
-       .slides .slide-pop1 {
+    .slide-pop1 {
       display: flex;
       flex-direction: column; 
       min-width: 100%;
@@ -73,7 +73,7 @@ body {
       overflow: hidden;
     }
 
-    .slides .slide-pop2 {
+    .slide-pop2 {
       display: flex;
       flex-direction: column; 
       min-width: 100%;
@@ -84,7 +84,7 @@ body {
       overflow: hidden;
     }
   
-    .slides .slide-pop3 {
+    .slide-pop3 {
       display: flex;
       flex-direction: column; 
       min-width: 100%;
@@ -95,7 +95,7 @@ body {
       overflow: hidden;
     }
 
-    .slides .slide-team {
+    .slide-team {
       display: flex;
       flex-direction: column; 
       min-width: 100%;
@@ -106,7 +106,7 @@ body {
       overflow: hidden;
     }
 
-    .slides h2 {
+    h2 {
       font-size: 2.5rem;
       padding-left: 2.75rem;
       margin: 0 0 1.25rem 0;
@@ -118,7 +118,7 @@ body {
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
 
-    .slides p {
+    p {
       color: var(--muted);
       padding-left: 2.75rem;
       font-size: 1.125rem;
@@ -648,4 +648,3 @@ footer {
     padding-left: 2%;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
-
