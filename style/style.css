@@ -562,6 +562,13 @@ footer {
 
 
 /* Service details*/
+.detail-image   {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1580256081112-e49377338b7f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
 .detail-banner   {
     display: flex;
     text-align: center;
@@ -585,7 +592,7 @@ footer {
 }
 .detail-content-container   {
     max-width: 100%;
-    margin-top: - 1auto;
+    margin-top: -90px;
     width: 100%;
     flex-grow: 2000;
     display: flex;
@@ -594,7 +601,7 @@ footer {
 }
 
 .detail-section{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 
 }
@@ -609,4 +616,28 @@ footer {
     padding-left: 2%;
     padding-top: 1%;
     padding-right: 2%;
+    min-width: 400px;
+    height: 400px;
 }
+.detail-card p {
+    font-size: 20px;
+    overflow:auto;
+    max-height: 60px;
+}
+.more-info {
+    padding: 2.5rem 1rem;
+    color: #fff;
+    background-color: rgba(90, 158, 167, 0.9)
+}
+.more-info-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.info-card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding-left: 2%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
