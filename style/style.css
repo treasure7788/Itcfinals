@@ -554,12 +554,21 @@ footer {
 
 .popular-searches {
     font-size: 0.9rem;
+    justify-content: flex-start;
 }
 
 .popular-searches a {
     color: #fff;
     text-decoration: underline;
+    justify-content: flex-start;
 }
+
+.card:hover {
+  transform: scale(1.12) translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
 
 /* DETAILS end */
 
