@@ -226,7 +226,7 @@ footer {
     width: 100%;
     background-color: #1d2a44;
     color: gray;
-    height: 50px;
+    height: 120px;
     display: flex;
     overflow:hidden;
 }
@@ -254,6 +254,23 @@ footer {
 #copyright  {
     user-select: none;
 }
+
+.footer-icons {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(96, 96, 172);
+    cursor: pointer;
+    
+}
+.footer-icons i{
+    width: 100%;
+    height: 100%;
+}
+/* FOOTER END (not yet done)*/
 
 /* DETAILS */
 .main-content {
@@ -304,12 +321,9 @@ footer {
 }
 
 
+
 /* DETAILS end */
 
-
-
-
-/* FOOTER END (not yet done)*/
 
 
 /* Service details*/
