@@ -11,12 +11,13 @@ body {
   margin: 0;
   border: 0;
   box-sizing: border-box; /*--This is used to remove the border of the background--*/
-  padding: 0;
+  padding: 50px;
+  background-color: #1B6B93;
 }
 
 .tagline {
     font-size: 58px;
-    color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
