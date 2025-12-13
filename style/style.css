@@ -227,14 +227,6 @@ a {
 /* LOGIN CSS ENDS HERE*/
 
 /* FOOTER */
-footer {
-    width: 100%;
-    background-color: #1d2a44;
-    color: gray;
-    height: 50px;
-    display: flex;
-    overflow:hidden;
-}
 
 .container {
     width: 100%; 
@@ -335,8 +327,6 @@ footer {
     background-color: #1B6B93;
     transform: translateY(-3px);
             }
-
-/* FOOTER*/
 
 /* FOOTER */
 
@@ -478,6 +468,8 @@ footer {
     background-color: rgba(27, 107, 147, 0.9);
     height: 1000px;
     margin-left: 0;
+    justify-content: center;
+    display: flex;
 }
 .faq-section h1 {
     text-align: center;
