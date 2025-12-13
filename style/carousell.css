@@ -1,15 +1,10 @@
 :root {
       --dark-bg: #fff;
-      --text: #7e7e7e;
+      --text: #f1f5f9;
       --muted: #94a3b8;
       --transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
       --nav-size: 52px;
     }
-    * {
-            margin:0; 
-            padding:0; 
-            box-sizing: border-box;
-            }
 
       /* Carousel container */
     .carousel {
@@ -107,7 +102,7 @@
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
 
-    p {
+    .slides p {
       color: var(--muted);
       padding-left: 2.75rem;
       font-size: 1.125rem;
@@ -268,10 +263,3 @@
         font-size: 1.4rem; 
       }
     }
-
-.tagline {
-    font-size: 58px;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-}
