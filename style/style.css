@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
 }
 
-.slider {
+.tagline-background {
   margin: 0;
   border: 0;
   box-sizing: border-box; /*--This is used to remove the border of the background--*/
