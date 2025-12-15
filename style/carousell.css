@@ -5,17 +5,7 @@
       --transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
       --nav-size: 52px;
     }
-
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
     
-
       /* Carousel Section */
     .carousel-section {
      height: auto;
@@ -127,7 +117,7 @@ body {
 
     h2 {
       font-size: 2.5rem;
-      padding-left: 2.75rem;
+      padding-left: 4.95rem;
       margin: 0 0 1.25rem 0;
       color: var(--text);
       letter-spacing: -0.03em;
@@ -139,7 +129,7 @@ body {
 
     .slides p {
       color: var(--muted);
-      padding-left: 2.75rem;
+      padding-left: 4.95rem;
       font-size: 1.125rem;
       max-width: 560px;
       text-align: justify; 
