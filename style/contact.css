@@ -57,12 +57,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    background: #ffffff;
+    background: #28ABB9;
     color: #000000;
 }
 
 .info-box {
-    height: 250px;
+    height: 150px;
     background: #28ABB9;
     padding: 20px;
     margin: 10px;
@@ -71,7 +71,7 @@ body {
 }
 
 .info-box h3 {
-    margin-top: 65px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     color: #ffffff;
@@ -408,3 +408,4 @@ footer {
 
 
 /* FOOTER*/
+
