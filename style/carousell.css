@@ -1,7 +1,7 @@
 :root {
       --dark-bg: #fff;
       --text: #f1f5f9;
-      --muted: #94a3b8;
+      --muted: #fff;
       --transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
       --nav-size: 52px;
     }
@@ -67,8 +67,10 @@
     .slide-pop1 {
       display: flex;
       flex-direction: column; 
+      justify-content: center; 
       min-width: 100%;
-      background: var(--bg);
+      background-image: url('assets/bedroom-banner.png');
+      background-position: right;
       background-size: cover; 
       padding: 0;
       position: relative;
@@ -80,8 +82,10 @@
     .slide-pop2 {
       display: flex;
       flex-direction: column; 
+      justify-content: center; 
       min-width: 100%;
-      background: var(--bg);
+      background-image: url('assets/livingroom-banner.png');
+      background-position: center;
       background-size: cover; 
       padding: 0;
       position: relative;
@@ -93,6 +97,7 @@
     .slide-pop3 {
       display: flex;
       flex-direction: column; 
+      justify-content: center; 
       min-width: 100%;
       background: var(--bg);
       background-size: cover; 
@@ -155,7 +160,7 @@
       height: var(--nav-size);
       border-radius: 50%;
       border: none;
-      color: white;
+      color: #fff;
       font-size: 2rem;
       display: none;
       align-items: center;
