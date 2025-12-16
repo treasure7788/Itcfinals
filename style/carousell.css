@@ -37,7 +37,7 @@
 
     /* Hide radios */
     .carousel input[type="radio"] {
-      position: absolute;
+      position: fixed;
       opacity: 0;
       pointer-events: none;
     }
