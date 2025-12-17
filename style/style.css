@@ -17,7 +17,7 @@ body {
 
 .tagline {
     font-size: 58px;
-    color: #wih;
+    color: white;
     text-align: center;
     padding: 20px 0;
 }
@@ -639,8 +639,23 @@ footer {
 .back-card p {
     color: #333;
     text-align: left;
-    flex-grow: 1;
 }
+
+.back-card ul {
+  text-align: left;
+  list-style-type: disc !important; /* This creates the bullet points */
+  list-style-position: outside;
+  padding-left: 20px; /* Space for the bullets */
+  font-size: 0.85rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.back-card li {
+    margin-bottom: 8px; /* Better spacing for readability */
+    line-height: 1.4;
+}
+
 .back-card button {
     align-self: flex-start;
     padding: 10px 20px;
@@ -653,6 +668,7 @@ footer {
     transition: background-color 0.3s;
     font-size: larger;
     font-weight: bold;
+    margin-top: auto;
 }
 .back-card button:hover {
     background-color: #145a73;
