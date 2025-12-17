@@ -85,7 +85,6 @@
       justify-content: center; 
       min-width: 100%;
       background-image: url('assets/livingroom-banner.png');
-      background-position: center;
       background-size: cover; 
       padding: 0;
       position: relative;
@@ -175,7 +174,7 @@
     }
 
     .nav:hover {
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(0, 0, 0, 0.16);
       border-color: rgba(255, 255, 255, 0.25);
       transform: translateY(-50%) scale(1.08);
     }
