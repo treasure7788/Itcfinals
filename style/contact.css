@@ -127,6 +127,9 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 
 .contact-form button:hover{
@@ -157,6 +160,8 @@ body {
     font-size: 13px;
     color: #1d2a44;
     background: #4fc0d0;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 
 .social-icons a:hover{
