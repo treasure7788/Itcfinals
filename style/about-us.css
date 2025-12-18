@@ -356,3 +356,109 @@ footer {
             }
 
 /* FOOTER*/
+/* mobile  */
+.nav-toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #dddddd;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-toggle:checked ~ .nav-links {
+    display: flex;
+}
+
+/* Mobile media queries */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 10px 20px;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .brand {
+        font-size: 16px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1B6B93;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    .nav-links a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .tagline {
+        font-size: 36px;
+        padding: 15px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .footer-socials {
+        order: 1;
+    }
+    .footer-links {
+        order: 2;
+    }
+    #copyright {
+        order: 3;
+    }
+    .more-info {
+        padding: 1.5rem 0.5rem;
+    }
+    .more-info-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .info-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 28px;
+    }
+    .nav-links a {
+        font-size: 13px;
+    }
+    .main-section {
+        height: 400px;
+    }
+    .more-info {
+        padding: 1rem 0.5rem;
+    }
+    .more-info-grid {
+        gap: 0.5rem;
+    }
+}

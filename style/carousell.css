@@ -56,7 +56,7 @@
       justify-content: center; 
       min-width: 100%;
       background-image: url('assets/banner.png');
-      background-size: cover; 
+      background-size: cover;
       padding: 0;
       position: relative;
       overflow: hidden;
@@ -244,36 +244,44 @@
 
     /* Responsive */
     @media (max-width: 768px) {
-      .carousel .slide { 
+    .carousel .slide { 
         height: 400px; 
         padding: 2rem 1.5rem; 
-      }
-      .carousel .slide h2 { 
+    }
+    .carousel .slide h2 { 
         font-size: 2rem; 
-      }
-      .carousel .slide p { 
+        padding-left: 1rem;
+    }
+    .carousel .slide p { 
         font-size: 1rem; 
-      }
-      .nav { 
+        padding-left: 1rem;
+        max-width: 100%;
+    }
+    .nav { 
         width: 44px; 
         height: 44px; 
         font-size: 1.6rem; 
-      }
-      .nav.prev { left: 12px; }
-      .nav.next { right: 12px; }
     }
+    .nav.prev { left: 12px; }
+    .nav.next { right: 12px; }
+}
 
-    @media (max-width: 480px) {
-      .carousel .slide { 
+@media (max-width: 480px) {
+    .carousel .slide { 
         height: 300px;
         padding: 1.75rem 1.25rem; 
-      }
-      .carousel .slide h2 { 
-        font-size: 1.75rem; 
-      }
-      .nav { 
+    }
+    .carousel .slide h2 { 
+        font-size: 1.5rem; 
+        padding-left: 0.5rem;
+    }
+    .carousel .slide p { 
+        font-size: 0.9rem; 
+        padding-left: 0.5rem;
+    }
+    .nav { 
         width: 40px; 
         height: 40px; 
         font-size: 1.4rem; 
-      }
     }
+}
